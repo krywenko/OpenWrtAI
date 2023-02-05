@@ -1,4 +1,4 @@
-chroot
+with in chroot
 mplayer
 vlc
 flite
@@ -16,7 +16,8 @@ whisper /recording path  --model tiny --language English  --fp16 False   -o /tmp
 
 sudo gpasswd -a nobody audio
 sudo -H -u nobody
-mount -o bind /dev /chroot_mnt_point/dev  # for audio device sharing 
+mount -t proc proc /proc  # intiate these a boot of system copy Start the chage root dir and execute then on host boot
+mount -t sysfs sys /sys
 
 
 host
@@ -33,3 +34,6 @@ grep
 make gcc
 git
 curl
+
+mount -o bind /dev /root/VLC_JULIUS/dev  # for audio and folder sharng do this as system boot 
+mount -o bind /tmp /root/VLC_JULIUS/tmp
