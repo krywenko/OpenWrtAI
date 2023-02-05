@@ -45,7 +45,7 @@ else
     ./speak "one moment" 1 $V > /dev/null 2>&1
     ### kadi ### rm /tmp/stt2
     ### kadi###./kaldi.py /tmp/mic.wav >>/tmp/stt2  ### kaldi speech to text docker container
-    ### kadi###Output=$(cat /tmp/stt2 | grep '"text" :' | sed 's/ "text" : //g' | sed 's/""//g' | sed 's/"the"//g' | sed  '/^\s*$/d')   ### kaldi speech to text docker container
+    ### kadi###Output=$(cat /tmp/stt2 | grep '"text" :' | sed 's/ "text" : //g' | sed 's/""//g' | sed 's/"the"//g' | sed  '/^\s*$/d'| tr '"' ' ')   ### kaldi speech to text docker container
 
  chroot /root/VLC_JULIUS /bin/bash WHISPER.sh
 
