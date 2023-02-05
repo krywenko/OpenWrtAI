@@ -4,6 +4,7 @@ vlc
 flite
 ffmpeg
 pip
+kaldi docker container  but uses a fair mount of memory---  alphacep/kaldi-en:latest 
 for offine stt whisper is the best though a little big but very acurate and fast
 
 https://github.com/openai/whisper
