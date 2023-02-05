@@ -62,3 +62,5 @@ make
 cp levenshtein exec to /bin
 ```
 and you are off and running 
+
+openwrtAI is the main executable 
