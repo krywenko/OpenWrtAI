@@ -7,7 +7,7 @@ A=0
 B=0
 DOMOTICZ=http://192.168.168.150:8080
 V=awb  ## voice
-O=1    ## online or offline voice 1=offline 
+O=0    ## online or offline voice 1=offline 
 
 while [[ $A < 3 ]]; do
 
